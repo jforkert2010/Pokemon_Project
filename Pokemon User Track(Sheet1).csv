@@ -1,0 +1,32 @@
+Entities & Attributes:,,,,,,
+,Entity,Attributre,Props,Description,,
+,Entity,Attribute,Props,Description,,
+,Pokemon,Pokedex #,RU,Unique identification # for each Pokemon,,
+,,Name,RU,Name of Pokemon,,
+,,Type,RM,All types of a pokemon,,
+,,Size,RM,Height and weight of pokemon,,
+,,Evolution Level,R,Level Pokemon evolves at,,
+,,Capture Rate,R,Base rate to catch Pokemon with no damage done,,
+,,Base Stats,RM,"Hp, speed, physical/special attack, physical/special defence of Pokemon",,
+,,Rarity,,How rare a pokemon is to find,,
+,,Caught,R,Have they Caught It,,
+,,Watchlist,,Add Pokemon to watch list,,
+,,,,,,
+,User,First Name,R,,,
+,,Last Name,R,,,
+,,Email,RU,,,
+,,,,,,
+,Generations,Game Title,RU,Gametitle generartion was introduced in,,
+,,Game Release Date,R,Date of generatrion release,,
+,,Release Price,,Price of game at release,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+Relationships:,,,,,,
+,Relationship,Entity,Rules,Min,Max,Entity 2
+,Pokemon introduced in generation,Pokemon,Is introdcued in,1,1,Generation
+,,Generation,Introduces,1,M,Pokemon
+,,,,,,
+,User and Pokemon,User,Has,0,M,Pokemon
+,,Pokemon,Has,0,1,User
